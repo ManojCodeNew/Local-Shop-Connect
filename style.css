@@ -1,0 +1,36 @@
+
+body{
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.sign_form{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.sign_form h2{
+    text-align: center;
+}
+.name, .email, .password, .submit{
+    width: calc(100%-40px);
+    padding: 3%;
+    margin: 5%;
+    border: 1px solid #ccc;
+    border: radius 5px;
+    border-radius: 3px;
+
+}
+.submit{
+    background-color: rgb(11, 193, 230);
+    border-radius: 3px;
+    cursor: pointer;
+}

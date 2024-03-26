@@ -1,0 +1,14 @@
+.nav_container{
+    border-bottom: 2px solid gray;
+}
+
+.nav_container h4{
+    display: block;
+
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
