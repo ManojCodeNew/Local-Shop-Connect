@@ -1,14 +1,67 @@
-.nav_container{
+.nav_container {
     border-bottom: 2px solid gray;
 }
 
-.nav_container h4{
+.nav_container h4 {
     display: block;
 
 }
-.nav{
+
+.nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.shop_card {
+    border: 1px solid rgb(252, 251, 251);
+    border-radius: 15px;
+    margin: 2px;
+    margin-top: 20px;
+    width: 220px;
+    height: 250px;
+    box-shadow: 1px 2px 20px rgba(49, 30, 33, 0.874);
+}
+
+.shop_img {
+    border: 1px solid rgb(255, 252, 252);
+    width: 208px;
+    height: 150px;
+    border-radius: 5px;
+    padding-bottom: 1px;
+    background-color: rgb(194, 188, 188);
+    /* position: relative; */
+    margin: 5px;
+
+}
+
+.shop_name {
+    /* position: absolute; */
+    margin: 10px;
+
+
+}
+
+.shop_type {
+
+    margin: 10px;
+    color: rgb(110, 107, 107);
+
+}
+
+.shop_location {
+    /* position: absolute; */
+
+    margin: 10px;
+    color: rgb(110, 107, 107);
+
+
+}
+
+#shop_details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
 }
