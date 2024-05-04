@@ -1,9 +1,44 @@
 .nav_container {
-    border-bottom: 2px solid gray;
+    box-shadow: 1px 6px 10px rgba(3, 4, 101, 0.645);
+    padding-left: 15px;
+    display: flex;
+height: 80px;
+    /* position: relative; Ensure positioning context */
+ 
 }
 
-.nav_container h4 {
-    display: block;
+body {
+    margin: auto;
+}
+
+.logo {
+    display: inline-block;
+    background-color: navy;
+    padding: 20px;
+    color: #fff;
+}
+.login{
+    /* position: absolute; */
+
+    align-content: center;
+    color: chocolate;
+    margin-left: 100%;
+    justify-content: center;
+}
+.logintext{
+    display: inline-block;
+    border: 1px solid rgba(164, 155, 155, 0.343);
+    padding: 5px;
+    border-radius: 8px;
+
+    /* top: 10px; /* Adjust top positioning as needed */
+    /* left: 10px; */ */
+}
+.logintext:hover{
+    box-shadow: 1px 2px 10px #000 ;
+    background: #1076c4;
+    color: white;
+    transition: background-color 0.3s ease , background-color 0.3s ease;
 
 }
 

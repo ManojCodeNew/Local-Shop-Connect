@@ -5,10 +5,7 @@ const shop_container = document.createElement('div');
 shop_container.id = "shop_details";
 // shop_container.style.display='row';
 shop_container.style.marginLeft = '10px';
-
-// grid-template-rows: 100px 200px; /* Two rows, 100px and 200px tall */
-//     grid-template-columns: 1fr 2fr;
-// const a=document.createElement('div');
+shop_container.style.marginTop="10vh";
 
 async function Fetchdata() {
     let response = await fetch(URL);
@@ -51,7 +48,10 @@ async function Fetchdata() {
         shop_card.addEventListener('click',()=>{
             window.location.href="details.html";
             let clicked_card_id=shop_card.id;
+            let name=shops.ownername;
             localStorage.setItem("shop_id",clicked_card_id);
+            localStorage.setItem("Ownername",name);
+
         })
         shop_container.appendChild(shop_card);
 
@@ -62,13 +62,13 @@ async function Fetchdata() {
 }
 Fetchdata();
 
-let username="manoj";
-let data={"id":"3","name":"","email":"manojpoojary2004@gma","password":"123","sid":"3","shopname":"MANOJ SHOP","ownername":"Manoj C"}
-fetch("http://localhost/practice/fetchdata.php",{
-    method:"POST",
-    headers:{
-        "Content-Type":"application/json; charset=utf-8"
-    },
-    body:JSON.stringify(data)
-})
-console.log(JSON.stringify(data));
+// let username="manoj";
+// let data={"id":"3","name":"","email":"manojpoojary2004@gma","password":"123","sid":"3","shopname":"MANOJ SHOP","ownername":"Manoj C"}
+// fetch("http://localhost/practice/fetchdata.php",{
+//     method:"POST",
+//     headers:{
+//         "Content-Type":"application/json; charset=utf-8"
+//     },
+//     body:JSON.stringify(data)
+// })
+// // console.log(JSON.stringify(data));
